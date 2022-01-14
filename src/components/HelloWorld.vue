@@ -10,13 +10,15 @@
     </p>
     <span> 輸入完成後，按Enter。 </span>
     <p></p>
+    <!-- dispatch 觸發 action 事件, 並傳遞內容 -->
     <input
       type="text"
       v-model="userName"
       placeholder="請輸入"
       @keydown.enter="$store.dispatch('updateName', userName)"
     />
-    <!-- <input type="submit" @click=" /> -->
+    
+  
   </div>
 </template>
 
